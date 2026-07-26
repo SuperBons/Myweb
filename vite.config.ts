@@ -3,6 +3,7 @@ import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import { defineConfig } from "vite";
+import { nitro } from "nitro/vite";
 
 export default defineConfig({
   plugins: [
@@ -14,6 +15,7 @@ export default defineConfig({
         },
       },
     }),
+    nitro(),
     viteReact(),
     tailwindcss(),
     tsConfigPaths(),
