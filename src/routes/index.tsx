@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
         content:
           "Portfolio of Alejandro Sanchez Rubio, systems engineering test conductor for Level 4 autonomous vehicles and full-stack AI engineer based in Merced, CA.",
       },
-      { property: "og:title", content: "Alejandro Sanchez Rubio — Systems Engineer" },
+      { property: "og:title", content: "Alejandro Sanchez Rubio — Systems Engineering Test Conductor" },
       {
         property: "og:description",
         content:
@@ -62,7 +62,6 @@ function Index() {
         <div className="flex items-center gap-4">
           <div className="size-2 animate-pulse rounded-full bg-accent" />
           <span className="font-mono text-[10px] uppercase tracking-widest text-muted">
-            System Status: Nominal // 2025.05
           </span>
         </div>
         <div className="flex gap-6 font-mono text-[10px] uppercase tracking-widest">
@@ -93,6 +92,7 @@ function Index() {
             {profile.firstName} <br /> {profile.lastName}
           </h1>
           <div className="grid grid-cols-1 gap-12 border-t border-border pt-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 border-t-2 border-muted/60 pt-8 md:grid-cols-2">
             <p className="max-w-[45ch] leading-relaxed text-pretty text-muted">{profile.summary}</p>
             <div className="grid grid-cols-2 gap-4 font-mono text-xs">
               <div className="flex flex-col gap-1">
@@ -109,7 +109,7 @@ function Index() {
                   href={profile.githubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-accent hover:underline"
+                  className="text-accent border-b-2 border-muted/60 transition-colors hover:border-accent"
                 >
                   {profile.github}
                 </a>
@@ -118,7 +118,7 @@ function Index() {
                 <span className="text-muted">CONTACT</span>
                 <a
                   href={`mailto:${profile.email}`}
-                  className="break-all text-accent hover:underline"
+                  className="break-all text-accent border-b-2 border-muted/60 transition-colors hover:border-accent"
                 >
                   {profile.email}
                 </a>
