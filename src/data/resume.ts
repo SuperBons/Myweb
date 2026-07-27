@@ -35,10 +35,9 @@ export const roles: Role[] = [
     bullets: [
       "Executed high-priority thermal diagnostics alongside Waymo senior and staff engineers to pinpoint an ECU fault impacting ten percent of the fleet, then ran rigorous regression testing on new ECUs to validate system stability.",
       "Conducted structured thermal load scenarios across varied environmental conditions to evaluate cooling efficiency and validate hardware design improvements.",
-      "Partnered with core engineering to develop and validate latent fault checks for new platform architectures, analyzing CAN and FlexRay signal data to isolate system anomalies and enforce strict operational tolerances.",
+      "Assited with core engineering to develop and validate latent fault checks for new platform architectures, analyzing CAN and FlexRay signal data to isolate system anomalies and enforce strict operational tolerances.",
       "Advanced depot automation initiatives by testing ADV charging workflows and sleep-state routines, utilizing system dashboards to identify and isolate operational bugs.",
-      "Led operational testing for a team of 7 specialists, ensuring strict adherence to quality protocols and safety standards for Level 4 autonomous vehicle deployment.",
-      "Validated and qualified new software and firmware builds for production release, executing critical go/no-go testing to ensure systems are safe for public roads.",
+      "Analyze collision avoidance simulations to validate non-ADV dynamic agent behaviors, ensuring surrounding actor trajectories remain strictly within realistic physical limits and constraints.",      "Validated and qualified new software and firmware builds for production release, executing critical go/no-go testing to ensure systems are safe for public roads.",
       "Troubleshot complex hardware-software interface faults in the field using command-line diagnostics to identify root causes and minimize vehicle downtime.",
       "Generated detailed technical logs and bug reports for software engineering teams, documenting disengagements, latency issues, and hardware anomalies."
     ],
@@ -62,7 +61,7 @@ export const roles: Role[] = [
     bullets: [
       "Developed AI-powered web scrapers with Firecrawl to auto-ingest job opportunities into Firebase, boosting listings by 30%.",
       'Built the "Digital AI Backpack" full-stack app using Firebase, Node.js, React, and Firebase Genkit for data management and user interface.',
-      "Optimized the scraper pipeline — cutting runtime by 40% and error rate by 15% — to ensure reliable, high-volume data collection.",
+      "Optimized the scraper pipeline architecture — cutting runtime by 40% and error rates by 15% — to ensure reliable data collection.",
     ],
   },
   {
@@ -71,8 +70,8 @@ export const roles: Role[] = [
     dates: "2024 — JULY 2025",
     location: "Merced, CA",
     bullets: [
-      "Aided development of a large-scale web application with 400,000+ lines of code, improving functionality and efficiency.",
-      "Designed a user-friendly interface using HTML, CSS, jQuery, JavaScript, and CSS libraries.",
+      "Contributed to full-stack web applications serving campus-wide initiatives, leveraging JavaScript (jQuery), HTML, and CSS framework libraries to optimize UI responsiveness.",
+      "Aided development and maintenance of a large-scale enterprise web application codebase (400,000+ lines of code).",
     ],
   },
   {
@@ -81,9 +80,35 @@ export const roles: Role[] = [
     dates: "2024 — JULY 2025",
     location: "Merced, CA",
     bullets: [
-      "Designed and delivered K–12 STEM curriculum on Python, NexTech robotics, and CoDrone EDU UAVs for precision agriculture.",
-      "Developed hands-on modules showcasing automation and AGTech to advance sustainability and food security.",
-      "Engaged students in emerging ag-technology, inspiring exploration of tech careers in agriculture.",
+      "Designed and delivered K–12 STEM curriculum on Python programming, NexTech robotics, and CoDrone EDU UAVs for precision agriculture applications.",
+      "Developed interactive technical modules demonstrating field automation, AGTech hardware, and environmental monitoring.",
+    ],
+  },
+];
+
+export interface Project {
+  name: string;
+  tech: string;
+  bullets: string[];
+}
+
+export const projects: Project[] = [
+  {
+    name: "Advanced Database Engine Implementation",
+    tech: "C++",
+    bullets: [
+      "Engineered a high-performance B+Tree index with O(log n) search complexity for accelerated data access.",
+      "Developed a SQL compilation pipeline: SQL → parse tree → optimized execution plan.",
+      "Applied cost-based optimization techniques, yielding 15–30% query performance gains.",
+      "Validated against the TPC-H benchmark on a 10 GB dataset and built a multi-phase verification framework with 50+ test queries.",
+    ],
+  },
+  {
+    name: "Memory Leak Detector",
+    tech: "C++, Dynamic Memory Analysis, Tooling",
+    bullets: [
+      "Developed a dynamic memory tracking tool to monitor heap allocations and deallocations, flagging unhandled memory leaks at runtime.",
+      "Implemented custom allocation wrappers to inspect pointer lifecycles, improving debugging efficiency for low-level systems programming.",
     ],
   },
 ];
@@ -93,45 +118,46 @@ export const skillGroups: { label: string; items: string[] }[] = [
     label: "Languages & Frameworks",
     items: [
       "Python",
-      "Java",
       "C/C++",
+      "Java",
       "JavaScript",
       "SQL",
       "HTML/CSS",
       "React",
-      "Spanish (Fluent)",
+      "Node.js",
+      "Flask",
+      "Express.js"
     ],
   },
   {
     label: "Developer Tools",
-    items: ["VS Code", "JetBrains", "GitHub", "Docker", "AI Programming Tools"],
+    items: ["Linux", "VS Code", "JetBrains", "GitHub", "Docker"],
   },
   {
     label: "Technologies",
     items: [
-      "Linux",
-      "LangChain",
-      "SQLAlchemy",
       "Firebase",
       "Firecrawl",
-      "Node.js",
-      "Flask",
-      "WordPress",
+      "Firebase Genkit",
+      "LangChain",
+      "SQLAlchemy",
+      "WordPress"
     ],
   },
 ];
 
 export const coursework: { code: string; name: string }[] = [
-  { code: "CORE_01", name: "Data Structures" },
-  { code: "CORE_02", name: "Algorithms and Design" },
-  { code: "CORE_03", name: "Software Engineering" },
-  { code: "CORE_04", name: "Operating Systems" },
-  { code: "CORE_05", name: "Computer Architecture" },
-  { code: "CORE_06", name: "Compiler Construction" },
-  { code: "CORE_07", name: "Artificial Intelligence" },
-  { code: "CORE_08", name: "Databases" },
-  { code: "CORE_09", name: "Database Implementation" },
-  { code: "CORE_10", name: "Full Stack Development" },
-  { code: "CORE_11", name: "Circuit Theory" },
-  { code: "CORE_12", name: "Engineering Math" },
+  { code: "CSE_01", name: "Database Systems Implementation" },
+  { code: "CSE_02", name: "Introduction to Compiler Construction" },
+  { code: "CSE_03", name: "Operating Systems" },
+  { code: "CSE_04", name: "Algorithm Design and Analysis" },
+  { code: "CSE_05", name: "Software Engineering" },
+  { code: "CSE_06", name: "Database Systems" },
+  { code: "CSE_07", name: "Full Stack Web Development" },
+  { code: "CSE_08", name: "Introduction to Artificial Intelligence" },
+  { code: "CSE_09", name: "Computer Organization" },
+  { code: "CSE_10", name: "Data Structures" },
+  { code: "CSE_11", name: "Discrete Mathematics" },
+  { code: "CSE_12", name: "Linear Algebra & Differential Equations" },
+  { code: "CSE_13", name: "Probability and Statistics" },
 ];

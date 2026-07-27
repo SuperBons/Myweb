@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ScanOverlay } from "@/components/ScanOverlay";
-import { profile, roles, skillGroups, coursework } from "@/data/resume";
+import { profile, roles, projects, skillGroups, coursework } from "@/data/resume";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -47,7 +47,7 @@ function SectionLabel({ children }: { children: string }) {
   return (
     <div className="mb-16 flex items-center gap-4">
       <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{children}</h2>
-      <div className="h-px flex-1 bg-border" />
+      <div className="h-[2px] flex-1 rounded-full bg-muted/40" />
     </div>
   );
 }
@@ -69,11 +69,14 @@ function Index() {
           <a href="#experience" className="text-muted transition-colors hover:text-accent">
             01. Experience
           </a>
+          <a href="#projects" className="text-muted transition-colors hover:text-accent">
+            02. Projects
+          </a>
           <a href="#skills" className="text-muted transition-colors hover:text-accent">
-            02. Skills
+            03. Skills
           </a>
           <a href="#contact" className="text-muted transition-colors hover:text-accent">
-            03. Contact
+            04. Contact
           </a>
         </div>
       </nav>
@@ -165,6 +168,37 @@ function Index() {
           </div>
         </section>
 
+        {/* Projects */}
+        <section id="projects" className="mb-32 scroll-mt-24">
+          <SectionLabel>Log_02: Projects</SectionLabel>
+
+          <div className="relative space-y-0">
+            <div className="absolute top-2 bottom-0 left-[7px] w-px bg-border" />
+
+            {projects.map((project) => (
+              <div
+                key={project.name}
+                className="group relative pb-16 pl-10 last:pb-0"
+              >
+                <div className="absolute top-2 left-0 size-3 rounded-full border border-accent bg-background transition-colors group-hover:bg-accent" />
+                <div className="mb-4 flex flex-col md:flex-row md:justify-between">
+                  <div>
+                    <h3 className="text-xl font-semibold tracking-tight">{project.name}</h3>
+                    <p className="mt-1 font-mono text-xs uppercase text-accent">{project.tech}</p>
+                  </div>
+                </div>
+                <ul className="max-w-2xl space-y-3 text-sm leading-relaxed text-muted">
+                  {project.bullets.map((b) => (
+                    <li key={b} className="flex gap-3">
+                      <span className="font-bold text-accent">→</span> {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Skills Matrix */}
         <section id="skills" className="mb-32 scroll-mt-24">
           <div className="grid grid-cols-1 gap-1 md:grid-cols-3">
@@ -189,7 +223,7 @@ function Index() {
         {/* Coursework Grid */}
         <section className="mb-32">
           <h2 className="mb-12 font-mono text-xs uppercase tracking-[0.2em] text-muted">
-            Log_02: Academic Foundation
+            Log_03: Academic Foundation
           </h2>
           <div className="mb-12 flex flex-col gap-1 border-l border-accent pl-4">
             <p className="text-lg font-semibold tracking-tight">
@@ -225,6 +259,32 @@ function Index() {
             <h2 className="text-4xl font-bold tracking-tighter">
               Ready for <br /> deployment.
             </h2>
+            <a
+              href="/jul26.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 inline-flex items-center gap-3 rounded-[2px] border border-accent/30 bg-accent/5 px-5 py-3 font-mono text-xs uppercase tracking-wider text-accent transition-all hover:bg-accent/15 hover:border-accent/60 group"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform group-hover:translate-y-0.5"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span className="flex items-center gap-2">
+                View Resume
+                <span className="font-mono text-[8px] text-muted">PDF // 124 KB</span>
+              </span>
+            </a>
           </div>
           <div className="flex flex-col gap-2 md:items-end">
             <a
