@@ -62,6 +62,7 @@ function Index() {
         <div className="flex items-center gap-4">
           <div className="size-2 animate-pulse rounded-full bg-accent" />
           <span className="font-mono text-[10px] uppercase tracking-widest text-muted">
+            System Status: Nominal // 2026.05
           </span>
         </div>
         <div className="flex gap-6 font-mono text-[10px] uppercase tracking-widest">
@@ -91,7 +92,6 @@ function Index() {
           <h1 className="mb-8 text-6xl font-bold tracking-tighter text-balance md:text-8xl">
             {profile.firstName} <br /> {profile.lastName}
           </h1>
-          <div className="grid grid-cols-1 gap-12 border-t border-border pt-8 md:grid-cols-2">
           <div className="grid grid-cols-1 gap-12 border-t-2 border-muted/60 pt-8 md:grid-cols-2">
             <p className="max-w-[45ch] leading-relaxed text-pretty text-muted">{profile.summary}</p>
             <div className="grid grid-cols-2 gap-4 font-mono text-xs">
