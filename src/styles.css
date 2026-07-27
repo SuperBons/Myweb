@@ -95,26 +95,26 @@
 
   /* #09090b */
   --background: oklch(0.1448 0.0038 285.82);
-  /* #fafafa */
-  --foreground: oklch(0.9851 0 0);
+  /* #71717a — swapped: was white, now gray */
+  --foreground: oklch(0.552 0.0159 285.94);
   /* subtle raised panel */
   --surface: oklch(1 0 0 / 4%);
   --card: oklch(0.1448 0.0038 285.82);
-  --card-foreground: oklch(0.9851 0 0);
+  --card-foreground: oklch(0.552 0.0159 285.94);
   --popover: oklch(0.1448 0.0038 285.82);
-  --popover-foreground: oklch(0.9851 0 0);
+  --popover-foreground: oklch(0.552 0.0159 285.94);
   /* #00ffc2 signal accent */
   --primary: oklch(0.8781 0.2073 164.62);
   --primary-foreground: oklch(0.1448 0.0038 285.82);
   --secondary: oklch(0.2103 0.0059 285.89);
-  --secondary-foreground: oklch(0.9851 0 0);
-  /* #71717a — used as the muted text rail */
-  --muted: oklch(0.552 0.0159 285.94);
-  --muted-foreground: oklch(0.552 0.0159 285.94);
+  --secondary-foreground: oklch(0.552 0.0159 285.94);
+  /* #fafafa — swapped: was gray, now white */
+  --muted: oklch(0.9851 0 0);
+  --muted-foreground: oklch(0.9851 0 0);
   --accent: oklch(0.8781 0.2073 164.62);
   --accent-foreground: oklch(0.1448 0.0038 285.82);
   --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.9851 0 0);
+  --destructive-foreground: oklch(0.552 0.0159 285.94);
   /* #18181b */
   --border: oklch(0.2103 0.0059 285.89);
   --input: oklch(0.2103 0.0059 285.89);
@@ -125,11 +125,11 @@
   --chart-4: oklch(0.2103 0.0059 285.89);
   --chart-5: oklch(0.9851 0 0);
   --sidebar: oklch(0.1448 0.0038 285.82);
-  --sidebar-foreground: oklch(0.9851 0 0);
+  --sidebar-foreground: oklch(0.552 0.0159 285.94);
   --sidebar-primary: oklch(0.8781 0.2073 164.62);
   --sidebar-primary-foreground: oklch(0.1448 0.0038 285.82);
   --sidebar-accent: oklch(0.2103 0.0059 285.89);
-  --sidebar-accent-foreground: oklch(0.9851 0 0);
+  --sidebar-accent-foreground: oklch(0.552 0.0159 285.94);
   --sidebar-border: oklch(0.2103 0.0059 285.89);
   --sidebar-ring: oklch(0.8781 0.2073 164.62);
 }

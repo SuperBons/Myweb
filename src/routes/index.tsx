@@ -89,7 +89,7 @@ function Index() {
               {profile.role}
             </span>
           </div>
-          <h1 className="mb-8 text-6xl font-bold tracking-tighter text-balance md:text-8xl">
+          <h1 className="mb-8 text-6xl font-bold tracking-tighter text-balance text-white md:text-8xl">
             {profile.firstName} <br /> {profile.lastName}
           </h1>
           <div className="grid grid-cols-1 gap-12 border-t-2 border-muted/60 pt-8 md:grid-cols-2">
@@ -254,9 +254,9 @@ function Index() {
         <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-12 md:flex-row md:items-end">
           <div>
             <p className="mb-4 font-mono text-[10px] uppercase text-accent">
-              Transmission End // 2025
+              Transmission End // 2026
             </p>
-            <h2 className="text-4xl font-bold tracking-tighter">
+            <h2 className="text-4xl font-bold tracking-tighter text-white">
               Ready for <br /> deployment.
             </h2>
             <a

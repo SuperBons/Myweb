@@ -6,7 +6,7 @@ export const profile = {
   summary:
     "Specializing in autonomous vehicle diagnostics and L4 deployment infrastructure. Bridging the gap between software reliability and hardware performance in extreme environmental conditions.",
   location: "Merced, CA",
-  academic: "UC Merced BS CSE",
+  academic: "BS Computer Science and Engineering",
   github: "@SuperBons",
   githubUrl: "https://github.com/SuperBons",
   linkedin: "/alex-sanchez2002",
