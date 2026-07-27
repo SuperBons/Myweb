@@ -34,11 +34,13 @@ export const roles: Role[] = [
     current: true,
     bullets: [
       "Executed high-priority thermal diagnostics alongside Waymo senior and staff engineers to pinpoint an ECU fault impacting ten percent of the fleet, then ran rigorous regression testing on new ECUs to validate system stability.",
-      "Executed structured thermal load scenarios across varied environmental conditions to evaluate cooling efficiency and validate hardware design improvements.",
-      "Lead operational testing for a team of 7 specialists, ensuring strict adherence to quality protocols and safety standards for Level 4 autonomous vehicle deployment.",
-      "Validate and qualify new software and firmware builds for production release, executing critical go/no-go testing to ensure systems are safe for public roads.",
-      "Troubleshoot complex hardware-software interface faults in the field using command line diagnostics to identify root causes and minimize vehicle downtime.",
-      "Generate detailed technical logs and bug reports for software engineering teams, documenting disengagements, latency issues, and hardware anomalies.",
+      "Conducted structured thermal load scenarios across varied environmental conditions to evaluate cooling efficiency and validate hardware design improvements.",
+      "Partnered with core engineering to develop and validate latent fault checks for new platform architectures, analyzing CAN and FlexRay signal data to isolate system anomalies and enforce strict operational tolerances.",
+      "Advanced depot automation initiatives by testing ADV charging workflows and sleep-state routines, utilizing system dashboards to identify and isolate operational bugs.",
+      "Led operational testing for a team of 7 specialists, ensuring strict adherence to quality protocols and safety standards for Level 4 autonomous vehicle deployment.",
+      "Validated and qualified new software and firmware builds for production release, executing critical go/no-go testing to ensure systems are safe for public roads.",
+      "Troubleshot complex hardware-software interface faults in the field using command-line diagnostics to identify root causes and minimize vehicle downtime.",
+      "Generated detailed technical logs and bug reports for software engineering teams, documenting disengagements, latency issues, and hardware anomalies."
     ],
   },
   {
