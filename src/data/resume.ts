@@ -131,14 +131,29 @@ export const skillGroups: { label: string; items: string[] }[] = [
   },
   {
     label: "Developer Tools",
-    items: ["Linux", "VS Code", "JetBrains", "GitHub", "Docker"],
+    items: [
+      "Linux", 
+      "VS Code", 
+      "JetBrains", 
+      "GitHub", 
+      "Docker", 
+      "System Dashboards"
+    ],
+  },
+  {
+    label: "Hardware & Systems",
+    items: [
+      "CAN/FlexRay Telemetry",
+      "OBD-II Diagnostics",
+      "Microcontrollers"
+    ],
   },
   {
     label: "Technologies",
     items: [
       "Firebase",
       "Firecrawl",
-      "Firebase Genkit",
+      "Genkit",
       "LangChain",
       "SQLAlchemy",
       "WordPress"
@@ -160,4 +175,5 @@ export const coursework: { code: string; name: string }[] = [
   { code: "CSE 015", name: "Discrete Mathematics" },
   { code: "MATH 024", name: "Linear Algebra & Differential Equations" },
   { code: "MATH 032", name: "Probability and Statistics" },
+  { code: "ENGR 065", name: "Circuit Theory" },
 ];
